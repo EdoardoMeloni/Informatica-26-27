@@ -1,7 +1,10 @@
 public class Main {
     public static void main (String[] args) {
 
-        System.out.println("hello world");
+        lampadina l;
+        l = new lampadina();
+        l.potenza = 30;
+
 
     }
 }
