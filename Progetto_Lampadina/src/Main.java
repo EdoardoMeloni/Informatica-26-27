@@ -1,10 +1,11 @@
 public class Main {
     public static void main (String[] args) {
 
-        lampadina l;
+        lampadina l, g;
         l = new lampadina();
-        l.potenza = 30;
-
+        g = new lampadina();
+        l.potenza = 10;
+        g.potenza = 50;
 
     }
 }
