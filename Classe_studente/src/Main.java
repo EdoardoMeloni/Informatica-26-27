@@ -15,7 +15,7 @@ public class Main {
         b.nome = "matteo";
         b.cognome = "bianchi";
         b.peso = 60.0;
-        b.altezza = 1.90;
+        b.altezza = 1.80;
         a.classe = "3AI";
 
     }
