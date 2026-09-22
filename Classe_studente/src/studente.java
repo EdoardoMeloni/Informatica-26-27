@@ -4,4 +4,12 @@ public class studente {
     String classe;
     Double altezza;
     Double peso;
+
+    public studente(String nome, String cognome, String classe, Double altezza, Double peso) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.classe = classe;
+        this.altezza = altezza;
+        this.peso = peso;
+    }
 }
