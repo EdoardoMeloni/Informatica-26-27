@@ -4,6 +4,7 @@ public class studente {
     String classe;
     Double altezza;
     Double peso;
+    double bmi;
 
     public studente(String nome, String cognome, String classe, Double altezza, Double peso) {
         this.nome = nome;
