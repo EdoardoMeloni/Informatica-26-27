@@ -48,16 +48,18 @@ public class Lampadina {
         this.accesa = false;
     }
 
-    public void aumentaLuminosita(){
-        this.intensita +=10;
-        if (this.intensita > 100){
+    public void aumentaIlluminazione() {
+        this.intensita += 10;
+
+        if (this.intensita > 100) {
             this.intensita = 100;
         }
     }
 
-    public void diminuisciLuminosita(){
-        this.intensita -=10;
-        if (this.intensita <= 0){
+    public void diminuisciIlluminazione() {
+        this.intensita -= 10;
+
+        if (this.intensita < 0) {
             this.intensita = 0;
         }
     }
@@ -65,7 +67,7 @@ public class Lampadina {
     @Override
     public String toString() {
         return "Lampadina{" +
-                "potenza = " + potenza +
+                " potenza = " + potenza +
                 ", colore = '" + colore + '\'' +
                 ", intensita = " + intensita +
                 ", accesa = " + accesa +
