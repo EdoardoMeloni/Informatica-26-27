@@ -9,6 +9,7 @@ public class Main{
         System.out.println("digita 3 per");
         System.out.println("digita 4 per");
         System.out.println("digita 5 per");
+        System.out.println("digita 6 per");
 
     }
 }
