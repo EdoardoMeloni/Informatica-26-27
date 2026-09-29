@@ -1,11 +1,11 @@
-public class Main {
-    public static void main (String[] args) {
+public class Main{
+    public static void main(String[] args){
+        Lampadina l, n;
 
-        lampadina l, g;
-        l = new lampadina();
-        g = new lampadina();
-        l.potenza = 10;
-        g.potenza = 50;
+        l = new Lampadina(30);
+        System.out.println(l);
+        n = new Lampadina(0);
+        System.out.println(n);
 
     }
 }
