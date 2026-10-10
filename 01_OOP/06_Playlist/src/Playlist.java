@@ -17,7 +17,6 @@ public class Playlist {
         stopGiaChiamato = false;
     }
 
-    // Costruttore di copia
     public Playlist(Playlist altra) {
         this.nome = altra.nome;
         this.quantiBrani = altra.quantiBrani;
@@ -37,7 +36,6 @@ public class Playlist {
     public void play() {
         stato = "PLAY";
 
-        // play interrompe la sequenza di stop
         stopGiaChiamato = false;
     }
 
@@ -47,7 +45,6 @@ public class Playlist {
             stato = "PAUSE";
         }
 
-        // anche pause interrompe i due stop consecutivi
         stopGiaChiamato = false;
     }
 
