@@ -1,12 +1,12 @@
 public class Angolo
 {
     private int gradi;
-    private int minuti;
+    private int primi;
     private int secondi;
 
-    public Angolo (int gradi, int minuti, int secondi){
+    public Angolo (int gradi, int primi, int secondi){
         this.gradi = gradi;
-        this.minuti = minuti;
+        this.primi = primi;
         this.secondi = secondi;
     }
 
@@ -14,8 +14,8 @@ public class Angolo
         this.gradi = gradi;
     }
 
-    public void setMinuti (int minuti){
-        this.minuti = minuti;
+    public void setMinuti (int primi){
+        this.primi = primi;
     }
 
     public void setSecondi(int secondi) {
@@ -24,35 +24,35 @@ public class Angolo
 
     public Angolo Sommaangolo (Angolo a){
         int seconditot = this.secondi + a.secondi;
-        int minutitot = this.minuti + a.minuti;
+        int primitot = this.primi + a.primi;
         int graditot = this.gradi + a.gradi;
 
         if (seconditot >= 60) {
             seconditot = seconditot - 60;
-            minutitot++;
+            primitot++;
         }
-        if (minutitot >= 60) {
-            minutitot = minutitot - 60;
+        if (primitot >= 60) {
+            primitot = primitot - 60;
             graditot++;
         }
         if (graditot >= 360){
             graditot -= 360;
         }
-        return new Angolo(graditot, minutitot, seconditot);
+        return new Angolo(graditot, primitot, seconditot);
     }
 
     public Angolo Sottraiangolo (Angolo a) {
         int seconditot = this.secondi - a.secondi;
-        int minutitot = this.minuti - a.minuti;
+        int primitot = this.primi - a.primi;
         int graditot = this.gradi - a.gradi;
 
         if (seconditot < 0) {
             seconditot += 60;
-            minutitot--;
+            primitot--;
         }
 
-        if (minutitot < 0) {
-            minutitot += 60;
+        if (primitot < 0) {
+            primitot += 60;
             graditot--;
         }
 
@@ -60,6 +60,6 @@ public class Angolo
             graditot = Math.abs(graditot);
         }
 
-        return new Angolo(graditot, minutitot, seconditot);
+        return new Angolo(graditot, primitot, seconditot);
     }
 }
