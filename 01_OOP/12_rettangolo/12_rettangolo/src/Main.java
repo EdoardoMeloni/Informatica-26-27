@@ -86,6 +86,5 @@ public class Main {
             System.out.println("6. per verificare se r2 è contenuto in r1");
             scelta = in.nextInt();
         }
-        in.close();
     }
 }
