@@ -38,7 +38,7 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("È uscito: " + dado.lancio());
+                    System.out.println("È uscito: " + dado.lancia());
                     break;
 
                 case 4:
