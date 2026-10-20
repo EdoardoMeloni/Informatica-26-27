@@ -57,7 +57,6 @@ public class Main {
                     System.out.println("Inserisci dx e dy:");
                     double dx = in.nextDouble();
                     double dy = in.nextDouble();
-                    // MODIFICATO: Assegniamo il nuovo rettangolo ritornato dal metodo
                     if (quale == 1) {
                         r1 = r1.effettuatrasla(dx, dy);
                         System.out.println("Rettangolo r1 aggiornato con la traslazione.");
