@@ -1,4 +1,3 @@
-
 public class LampadinaNonValidaException extends Exception {
 
     @Override

@@ -119,9 +119,9 @@ public class Lampadina {
             b = 203;
         }
 
-        r = r + (255 - r) * (100 - luminosita) / 100;
-        g = g + (255 - g) * (100 - luminosita) / 100;
-        b = b + (255 - b) * (100 - luminosita) / 100;
+        r = r + (255 - r) * (100 - luminosita) / 100; //255 -r trova la distanza da bianco e 100- luminosita è cio che lo schiarisce
+        g = g + (255 - g) * (100 - luminosita) / 100; //(fattore di schiarimento della lampadina), viene sommato al valore di colore attuale e viene
+        b = b + (255 - b) * (100 - luminosita) / 100; // messo in percentuale per schiareire o no il colore
 
         this.lamp.setColor(new Color(r, g, b));
         this.lamp.fill();

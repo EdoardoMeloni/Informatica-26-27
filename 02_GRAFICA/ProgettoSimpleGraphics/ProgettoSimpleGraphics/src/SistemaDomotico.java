@@ -97,34 +97,23 @@ public class SistemaDomotico {
             lampadine[i].accendi();
         }
     }
-
     public void spegniTutte() {
-
         for (int i = 0; i < numeroLampadine; i++) {
             lampadine[i].spegni();
         }
     }
 
     public double getPotenzaAttuale() {
-
         double potenzaTotale = 0;
 
         for (int i = 0; i < numeroLampadine; i++) {
-
             if (lampadine[i].isAccesa()) {
-
                 potenzaTotale += lampadine[i].getPotenza()
-                        * lampadine[i].getLuminosita() / 100.0;
+                        * lampadine[i].getLuminosita() / 100;
             }
         }
 
         return potenzaTotale;
     }
 
-    @Override
-    public String toString() {
-
-        return "Sistema domotico con " + numeroLampadine +
-                " lampadine su un massimo di " + massimoLampadine;
-    }
 }
